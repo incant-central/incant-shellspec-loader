@@ -1,6 +1,6 @@
 {
   "name": "@incant/incant-shellspec-loader",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "ShellSpec loader for Incant",
   "main": "index.js",
   "scripts": {
