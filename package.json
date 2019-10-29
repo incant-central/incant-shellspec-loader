@@ -7,10 +7,10 @@
     "test": "ava test/*.spec.js",
     "watch": "npm run test -- --watch"
   },
-  "homepage": "https://github.com/incant-central/incant-shellspec-loader",
+  "homepage": "https://github.com/incant-central/shellspec-loader",
   "repository": {
     "type": "git",
-    "url": "https://github.com/incant-central/incant-shellspec-loader.git"
+    "url": "https://github.com/incant-central/shellspec-loader.git"
   },
   "author": {
     "name": "Mac Heller-Ogden",
