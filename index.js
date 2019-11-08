@@ -1,6 +1,5 @@
 'use strict';
 
-module.exports = ShellLoader;
 
 const ShellSpec = require('shellspec');
 const { spawn } = require('child_process');
@@ -20,3 +19,6 @@ function ShellLoader({ spec }) {
 
     return shellTarget;
 }
+
+module.exports = ShellLoader;
+module.exports.study = (target, { subcommand } = {}) => ShellSpec(target.spec).getConfigPaths(subcommand);
