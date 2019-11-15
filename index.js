@@ -7,7 +7,7 @@ const { spawn } = require('child_process');
 function ShellLoader({ spec }) {
     const loader = ShellSpec(spec);
 
-    async function shellTarget(config = {}, { Resource:cmdPath, onCancel }) {
+    async function shellTask(config = {}, { Resource:cmdPath, onCancel }) {
         cmdPath = Array.isArray(cmdPath)
             ? cmdPath.slice(1)
             : cmdPath.split('.').slice(1);
@@ -17,8 +17,8 @@ function ShellLoader({ spec }) {
         return spawned;
     }
 
-    return shellTarget;
+    return shellTask;
 }
 
 module.exports = ShellLoader;
-module.exports.study = (target, { subcommand } = {}) => ShellSpec(target.spec).getConfigPaths(subcommand);
+module.exports.study = (task, { subtask } = {}) => ShellSpec(task.spec).getConfigPaths(subtask);
